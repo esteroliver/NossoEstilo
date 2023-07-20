@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Josefin+Sans:wght@400;700&display=swap');
-/* 
-font-family: 'DM Serif Display', serif;
 
-font-family: 'Josefin Sans', sans-serif; */
 :root{
     --roxo: #860BD1;
     --amarelo: #EBC917;
@@ -24,7 +21,6 @@ header{
     padding: 0.5em;
     width: 100%;
     background-color: var(--roxo);
-    justify-content: space-between;
     align-items: center;
 }
 header h1{
@@ -39,8 +35,15 @@ header h1 strong{
 }
 header input{
     padding: 5px;
-    height: 50%;
     border-radius: 5em;
     border: none;
     font-family: var(--padrao);
+}
+header button{
+    background-color: var(--roxo);
+    border: none;
+}
+header button img{
+    width: 70%;
+    height: 70%;
 }

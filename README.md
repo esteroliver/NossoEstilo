@@ -11,4 +11,6 @@ Nosso projeto pretende facilitar esse tipo de agendamento, diminuindo a necessid
 - Desenhar
 - Montar
 ## Protótipo do projeto
-<a href="https://www.figma.com/proto/udVQD2e5RJqT1EQlA7ETAc/NossoESTILO?type=design&node-id=1-2&t=aukGyNmBvLlgE9pC-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design" value="Figma">
+<a href="https://www.figma.com/proto/udVQD2e5RJqT1EQlA7ETAc/NossoESTILO?type=design&node-id=1-2&t=aukGyNmBvLlgE9pC-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design">Protótipo no Figma.</a>
+
+                                                                                                                                                                      

@@ -85,6 +85,41 @@ header button{
         width: 45%;
     }
 }
+/*NAV*/
+nav ul{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color:#fff;
+    display:none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.384);
+}
+nav:hover ul, nav.over ul{
+    display:block;
+}
+nav ul li{
+    list-style: none;
+    width: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--padrao);
+}
+.cab a{
+    border-bottom: 3px solid var(--verde-escuro);
+}
+.manc a{
+    border-bottom: 3px solid var(--verde);
+}
+.epl a{
+    border-bottom: 3px solid var(--laranja);
+}
+.maqu a{
+    border-bottom: 3px solid var(--vermelho);
+}
 /*MAIN*/
     /*PROFISSIONAIS EM DESTAQUE*/
 main h1{
@@ -155,4 +190,45 @@ main hr{
 .tendencias ul li img{
     width: 300px;
     height: 320px;
+}
+
+/*CORES DAS PÁGINAS*/
+.cabeleleiros {
+    background-color: var(--verde-escuro);
+}
+.cabeleleiros button{
+    background-color: var(--verde-escuro);
+}
+.cabeleleiros a{
+    text-decoration: none;
+}
+
+.manicure {
+    background-color: var(--verde);
+}
+.manicure button{
+    background-color: var(--verde);
+}
+.manicure a{
+    text-decoration: none;
+}
+
+.epilacao {
+    background-color: var(--laranja);
+}
+.epilacao button{
+    background-color: var(--laranja);
+}
+.epilacao a{
+    text-decoration: none;
+}
+
+.maquiagem {
+    background-color: var(--vermelho);
+}
+.maquiagem button{
+    background-color: var(--vermelho);
+}
+.maquiagem a{
+    text-decoration: none;
 }

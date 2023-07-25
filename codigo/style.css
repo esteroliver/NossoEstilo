@@ -8,6 +8,7 @@
     --laranja: #D34A1F;
     --vermelho: #C81919;
     --cinza: #EAEAEA;
+    --cinza-escuro:  #3b3b3b;
 
     --destaque: 'DM Serif Display', serif;
     --padrao: 'Josefin Sans', sans-serif; font-weight: 400;
@@ -86,6 +87,58 @@ header button{
 }
 /*MAIN*/
     /*PROFISSIONAIS EM DESTAQUE*/
+main h1{
+    font-family: var(--destaque);
+    margin-left: 30px;
+    font-size: 1.5em;
+}
+main hr{
+    width: 10px;
+    margin-left: 30px;
+    color: black;
+    padding: 0;
+    border: 3px solid black;
+}
+.prof-destaque{
+    display: flex;
+}
+.profissional{
+    display: flex;
+    background-color: var(--cinza);
+    border-radius: 35px;
+    width: 30em;
+    padding: 0;
+    margin: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+}
+.profissional figure{
+    background-color: var(--roxo);
+    padding: 10px;
+    border-radius: 30% 0% 0% 30%;
+    margin: 0;
+}
+.profissional figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.profissonal section{
+    height: 120px;
+    margin: 0px;
+}
+.profissional section p{
+    margin: 10px; 
+    text-align: justify;
+    font-family: var(--padrao);
+}
+.nome {
+    color: black;
+    font-size: 20px;
+}
+.bio{
+    color: var(--cinza-escuro);
+    font-size: 15px;
+}
 
     /*CARROSSEL*/
 .tendencias{

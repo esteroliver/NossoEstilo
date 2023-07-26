@@ -9,28 +9,26 @@
     --vermelho: #C81919;
     --cinza: #EAEAEA;
     --cinza-escuro:  #3b3b3b;
+    --preto: #000000;
 
     --destaque: 'DM Serif Display', serif;
     --padrao: 'Josefin Sans', sans-serif; font-weight: 400;
     --padrao-bold: 'Josefin Sans', sans-serif; font-weight: 700;
 }
-body{
-    margin: 0px;
-    padding: 0px;
-}
+
 header{
     display: flex;
-    margin: 0px;
-    padding:  0.5em 0;
+    margin: 0;
+    margin-top: -10px;
+    margin-left: -8px;
+    padding: 0.5em;
     width: 100%;
-    background-color: var(--roxo);
+    background-color: var(--verde-escuro);
     align-items: center;
-    
 }
 header h1{
     font-size: 1.5em;
     color: white;
-    margin: 0.5em;
 }
 header h1 em{
     font-family: var(--destaque);
@@ -59,10 +57,9 @@ header button{
 .usuario{ 
     position: absolute;
     right: 0;
-    margin: 0px;
+    margin: 0px 15px;
     display: flex;
     align-items: center;
-    margin: 0.5em;
 }
 .usuario a{
     text-decoration: none;
@@ -89,7 +86,7 @@ header button{
         width: 45%;
     }
 }
-/*NAV*/
+
 nav ul{
     position: absolute;
     top: 25px;
@@ -124,129 +121,27 @@ nav ul li a{
 .maqu a{
     border-bottom: 3px solid var(--vermelho);
 }
-/*MAIN*/
-    /*PROFISSIONAIS EM DESTAQUE*/
-.home main h1{
-    font-family: var(--destaque);
-    margin-left: 30px;
-    font-size: 1.5em;
-}
-.home main hr{
-    width: 10px;
-    margin-left: 30px;
-    color: black;
-    padding: 0;
-    border: 3px solid black;
-    height: 0;
-}
-.home .prof-destaque{
-    display: flex;
-}
-.home .profissional{
-    display: flex;
-    background-color: var(--cinza);
-    border-radius: 35px;
-    width: 30em;
-    padding: 0;
-    margin: 20px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
-}
-.home .profissional figure{
-    background-color: var(--roxo);
-    padding: 10px;
-    border-radius: 30% 0% 0% 30%;
-    margin: 0;
-}
-.home .profissional figure img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-}
-.home .profissonal section{
-    height: 120px;
-    margin: 0px;
-}
-.home .profissional section p{
-    margin: 10px; 
-    text-align: justify;
-    font-family: var(--padrao);
-}
-.home .nome {
-    color: black;
-    font-size: 25px;
-}
-.home .bio{
-    color: var(--cinza-escuro);
-    font-size: 17px;
+
+#tit{
+    font: italic 35px var(--destaque);
+    margin: 100px;
+    margin-left: 25%;
+    margin-top: 40px;
 }
 
-    /*CARROSSEL*/
-.home .tendencias{
-    overflow: hidden;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-.home .tendencias ul{
-    list-style-type: none;
-    display: flex;
-}
-.home .tendencias ul li img{
-    width: 300px;
-    height: 320px;
+#traco{
+    border-bottom: 5px solid var(--preto);
 }
 
-/*CORES DAS PÁGINAS*/
-.cabeleleiros {
-    background-color: var(--verde-escuro);
-}
-.cabeleleiros button{
-    background-color: var(--verde-escuro);
-}
-.cabeleleiros a{
-    text-decoration: none;
-}
-
-.manicure {
-    background-color: var(--verde);
-}
-.manicure button{
-    background-color: var(--verde);
-}
-.manicure a{
-    text-decoration: none;
-}
-
-.epilacao {
-    background-color: var(--laranja);
-}
-.epilacao button{
-    background-color: var(--laranja);
-}
-.epilacao a{
-    text-decoration: none;
-}
-
-.maquiagem {
-    background-color: var(--vermelho);
-}
-.maquiagem button{
-    background-color: var(--vermelho);
-}
-.maquiagem a{
-    text-decoration: none;
-}
-/*PROFISSIONAIS*/
-
-.main-pag{
+main{
     padding-left: 40px;
     display: grid;
     justify-content: center;
     grid-template-areas: 
-    "profissional-cab profissional-cab"
-    "profissional-cab profissional-cab"
-    "profissional-cab profissional-cab";
+    "profissional-1 profissional-2"
+    "profissional-3 profissional-4"
+    "profissional-5 profissional-6";
+    
 }
 
 @media only screen and (max-width: 1000px){
@@ -256,19 +151,7 @@ nav ul li a{
         align-items: center;
     }
 }
-h1{
-    font-family: var(--destaque);
-    margin-left: 8em;
-    font-size: 1.5em;
-}
-hr{
-    width: 10px;
-    margin-left: 12em;
-    color: black;
-    padding: 0;
-    border: 3px solid black;
-    height: 0;
-}
+
 article{
     display: flex;
     padding: 0;
@@ -280,34 +163,10 @@ article{
     width: 30em;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
-.profissional-cab figure{
+article figure{
     display: flex;
     justify-content: center;
     background-color: var(--verde-escuro);
-    padding: 50px;
-    border-radius: 20px 0 0 20px;
-    margin: 0;
-}
-.profissional-ep figure{
-    display: flex;
-    justify-content: center;
-    background-color: var(--laranja);
-    padding: 50px;
-    border-radius: 20px 0 0 20px;
-    margin: 0;
-}
-.profissional-mac figure{
-    display: flex;
-    justify-content: center;
-    background-color: var(--verde);
-    padding: 50px;
-    border-radius: 20px 0 0 20px;
-    margin: 0;
-}
-.profissional-maqu figure{
-    display: flex;
-    justify-content: center;
-    background-color: var(--vermelho);
     padding: 50px;
     border-radius: 20px 0 0 20px;
     margin: 0;

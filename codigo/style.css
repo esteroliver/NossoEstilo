@@ -16,18 +16,21 @@
 }
 body{
     margin: 0px;
+    padding: 0px;
 }
 header{
     display: flex;
     margin: 0px;
-    padding: 0.5em;
+    padding:  0.5em 0;
     width: 100%;
     background-color: var(--roxo);
     align-items: center;
+    
 }
 header h1{
     font-size: 1.5em;
     color: white;
+    margin: 0.5em;
 }
 header h1 em{
     font-family: var(--destaque);
@@ -56,9 +59,10 @@ header button{
 .usuario{ 
     position: absolute;
     right: 0;
-    margin: 0px 15px;
+    margin: 0px;
     display: flex;
     align-items: center;
+    margin: 0.5em;
 }
 .usuario a{
     text-decoration: none;

@@ -72,7 +72,7 @@ header button{
     color: white;
     margin: 0px;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 540px){
     header h1{
         font-size: 1.2em;
     }
@@ -124,20 +124,18 @@ nav ul li a{
     border-bottom: 3px solid var(--vermelho);
 }
 /*MAIN*/
-    /*PROFISSIONAIS EM DESTAQUE*/
 .home main h1{
     font-family: var(--destaque);
-    margin-left: 30px;
     font-size: 1.5em;
 }
 .home main hr{
     width: 10px;
-    margin-left: 30px;
     color: black;
     padding: 0;
     border: 3px solid black;
     height: 0;
 }
+    /*PROFISSIONAIS EM DESTAQUE*/
 .prof-destaque{
     display: flex;
 }
@@ -182,23 +180,89 @@ nav ul li a{
     font-size: 17px;
 }
 
-    /*CARROSSEL*/
+    /*TENDÊNCIAS*/
 .home .tendencias{
-    overflow: hidden;
-    display: block;
-    margin: auto;
+    display: flex;
     margin-top: 20px;
+    justify-content: center;
     position: relative;
 }
 .home .tendencias ul{
     list-style-type: none;
     display: flex;
+    margin: auto;
+}
+.home .tendencias ul li{
+    margin: 20px;
 }
 .home .tendencias ul li img{
     width: 300px;
-    height: 320px;
+    height: 400px;
+    border-radius: 30px;
 }
+.home .tendencias ul li p{
+    font-family: var(--padrao);
+    color: var(--cinza-escuro);
+}
+@media only screen and (max-width: 1540px){
+    .home .tendencias ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .prof-destaque{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .prof-destaque article{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .prof-destaque{
+        display: flex;
+    }
+    .prof-destaque article{
+        margin: 30px;
+    }
+    .profissional{
+        display: flex;
+        background-color: var(--cinza);
+        border-radius: 35px;
+        width: 20em;
+        padding: 0;
+        margin: 15px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+    }
+    .profissional figure{
+        background-color: var(--roxo);
+        padding: 10px;
+        border-radius: 30% 0% 0% 30%;
+        margin: 0;
+    }
+    .profissional figure img{
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+    }
+    .profissonal section{
+        height: 90px;
+        margin: 0px;
+    }
+    .profissional section p{
+        margin: 10px; 
+        text-align: justify;
+        font-family: var(--padrao);
+    }
+    .nome {
+        color: black;
+        font-size: 20px;
+    }
+    .bio{
+        color: var(--cinza-escuro);
+        font-size: 12px;
+    }
 
+}
 /*CORES DAS PÁGINAS*/
 .cabeleleiros {
     background-color: var(--verde-escuro);

@@ -136,11 +136,19 @@ nav ul li a{
     height: 0;
 }
     /*PROFISSIONAIS EM DESTAQUE*/
+.estrelas{
+    color: #FFD700; 
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 80px;
+}
 .prof-destaque{
     display: flex;
 }
-.prof-destaque article{
+.prof-destaque{
     margin: auto;
+    margin-left: 12%;
 }
 .profissional{
     display: flex;
@@ -153,7 +161,7 @@ nav ul li a{
 }
 .profissional figure{
     background-color: var(--roxo);
-    padding: 10px;
+    padding: 12px;
     border-radius: 30% 0% 0% 30%;
     margin: 0;
 }
@@ -173,11 +181,12 @@ nav ul li a{
 }
 .nome {
     color: black;
-    font-size: 25px;
+    font-size: 30px;
 }
 .bio{
     color: var(--cinza-escuro);
     font-size: 17px;
+    max-width: 90%;
 }
 
     /*TENDÊNCIAS*/
@@ -224,6 +233,11 @@ nav ul li a{
     .prof-destaque article{
         margin: 30px;
     }
+
+    .prof-destaque article .bio{
+        font-size: 13px;
+    }
+
     .profissional{
         display: flex;
         background-color: var(--cinza);
@@ -306,7 +320,7 @@ nav ul li a{
 /*PROFISSIONAIS*/
 
 .main-pag{
-    padding-left: 40px;
+    padding-left: 0px;
     display: grid;
     justify-content: center;
     grid-template-areas: 
@@ -401,4 +415,11 @@ article section p{
 .bio{
     color: var(--cinza-escuro);
     font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+    .main-pag {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

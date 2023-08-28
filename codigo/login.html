@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html" class="no-text-decoration">
             <h1><em>nosso</em><strong>ESTILO</strong></h1>
         </a>
         <div class="barra-pesquisa">
@@ -18,10 +18,16 @@
             </button>
             <nav>
                 <a href="#"><img src="imagens/cardapio.png" alt="Ícone para menu de navegação."></a>
+                <ul>
+                    <li class="cab"><a href="cabeleleiros.html">Cabeleleiros</a></li>
+                    <li class="manc"><a href="manicure.html">Manicure</a></li>
+                    <li class="epl"><a href="epilacao.html">Epilação</a></li>
+                    <li class="maqu"><a href="maquiagem.html">Maquiagem</a></li>
+                </ul>
             </nav>
         </div>
         <div class="usuario">
-            <a href="#">
+            <a href="login.html">
                 <img src="imagens/usuario.png" alt="Ícone de usuário.">
                 <p>Entrar</p>
             </a>
@@ -46,11 +52,12 @@
                         <input type="password" placeholder="Senha" required  class="input radius input-text">
                     </div>
 
-                    <span>
-                        <p>Lembre-se da minha senha</p>
-                        <p>Esqueceu sua senha?</p>
-                    </span>
-        
+                    <div id="senhas-login">
+                        <input type = "checkbox" id = "checkbox" name = "checkbox" value = "checkbox">
+                        <span id="checkmark"></span>
+                            <p id="lembre-de-mim">Lembre-se da minha senha</p>
+                            <p id="esqueceu-sua-senha">Esqueceu sua senha?</p>
+                    </div>
                     <input type="submit" value="Login" class="submit">
                     <p id="cadastre-se">Ainda não tem uma conta? <span class="italic bold">Cadastre-se</span></p>
                 </form>

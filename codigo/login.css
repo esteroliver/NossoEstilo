@@ -16,21 +16,24 @@
 }
 body{
     margin: 0px;
+    padding: 0px;
+    background-image: url(imagens/imgs-site/bg-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 header{
     display: flex;
     margin: 0px;
-    padding: 0.5em;
+    padding:  0.5em 0;
     width: 100%;
     background-color: var(--roxo);
     align-items: center;
 }
-header a{
-    text-decoration: none;
-}
 header h1{
     font-size: 1.5em;
     color: white;
+    margin: 0.5em;
 }
 header h1 em{
     font-family: var(--destaque);
@@ -49,6 +52,11 @@ header button{
     border: none;
     padding: 0px 5px;
 }
+
+.no-text-decoration{
+    text-decoration: none;
+}
+
 .barra-pesquisa{
     position: absolute;
     right: 0;
@@ -59,9 +67,10 @@ header button{
 .usuario{ 
     position: absolute;
     right: 0;
-    margin: 0px 15px;
+    margin: 0px;
     display: flex;
     align-items: center;
+    margin: 0.5em;
 }
 .usuario a{
     text-decoration: none;
@@ -72,7 +81,7 @@ header button{
     color: white;
     margin: 0px;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 540px){
     header h1{
         font-size: 1.2em;
     }
@@ -88,6 +97,43 @@ header button{
         width: 45%;
     }
 }
+/*NAV*/
+nav ul{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color:#fff;
+    display:none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.384);
+}
+nav:hover ul, nav.over ul{
+    display:block;
+}
+nav ul li{
+    list-style: none;
+    width: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--padrao);
+}
+.cab a{
+    border-bottom: 3px solid var(--verde-escuro);
+}
+.manc a{
+    border-bottom: 3px solid var(--verde);
+}
+.epl a{
+    border-bottom: 3px solid var(--laranja);
+}
+.maqu a{
+    border-bottom: 3px solid var(--vermelho);
+}
+
+/* Main */
 #container{
     font-family: var(--padrao);
     background-color: #EAEAEA;
@@ -107,6 +153,7 @@ header button{
 #label-login{
     display: block;
     margin-top: 40px;
+    font-size: 20px;
 }
 
 #child{
@@ -114,9 +161,8 @@ header button{
 
 }
 #container input{
-    padding: 12px 100px;
+    padding: 10px 90px;
     border: none;
-    color: rgba(0, 0, 0, 0.4);
 }
 
 .radius{
@@ -130,23 +176,31 @@ header button{
 .input-text{
     margin-top: 15px;
     color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
 }
 
 .submit{
     width: 100%;
     background-color: var(--amarelo);
     box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.40);
+    color: white;
+    font-size: 15px;
 }
 
 #logomarca{
     margin: 0.5em;
 }
 
-form span p {
+#lembre-de-mim, #esqueceu-sua-senha {
     margin-top: 20px;
-    display: inline-block;
-    margin-right: 20px; 
+    display: inline-block; 
     font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#lembre-de-mim{
+    margin-right: 60px;
+    
 }
 
 .italic{
@@ -155,6 +209,7 @@ form span p {
 
 .bold{
     font-style: bold;
+    font-weight: bold;
 }
 
 #hr{
@@ -167,6 +222,7 @@ form span p {
 
 #input-email, #input-senha{
     position: relative;
+
 }
 
 #input-email span{
@@ -197,5 +253,8 @@ form span p {
     font-size: 14px;
 }
 
+#senhas-login{
+    align-items: center;
+}
 
 
